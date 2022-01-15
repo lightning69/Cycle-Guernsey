@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../stylesheet.css" rel="stylesheet" type="text/css"/>
+        <title>Routes - Stroll in the Park</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body onload="setInterval(function() {transition()}, 3000)">
+        <div class="wrapper">
+            <div class="main_bar" id="mbs">
+                <img src="../images/Real Logo.png" class="logo"/>
+                <h1 class="heading"><strong>Routes - Stroll in The Park</strong></h1>
+                <div class="return">
+                    <a class="return_image_link" href="../routes.html" target="_blank"><img class="return_image" src="../images/ba.png"/></a>
+                    <p class="return_text">Back</p>
+                </div>
+            </div>
+
+            <div class="single_body">
+                <div class="top_single">
+                    <div class="route_image_container">
+                        <img class="route_image" src="routeimages/stroll in the park/1.JPG" id="i1"/>
+                        <img class="route_image current" src="routeimages/stroll in the park/2.JPG" id="i2"/>
+                        <img class="route_image" src="routeimages/stroll in the park/3.JPG" id="i3"/>
+                    </div>
+
+                    <div class="route_stats">
+                        <h3 class="header">Statistics</h3>
+                        <ul class="route_stats_list">
+                            <li id="length"><strong>Length: </strong> &nbsp;<span id="lengthNum">6.77</span> km</li>
+                            <li id="ascent"><strong>Ascent: </strong> &nbsp;<span id="ascentNum">86</span> m</li>
+                            <li id="descent"><strong>Descent: </strong> &nbsp;86 m</li>
+                            <li id="gradient"><strong>Gradient: </strong> &nbsp;13 m/km</li>
+                            <li id="route_type"><strong>Route Type: </strong> &nbsp;Loop</li>
+                            <li id="start_parish"><strong>Start Parish: </strong> &nbsp;St Andrews</li>
+                            <li id="end_parish"><strong>End Parish: </strong> &nbsp;St Andrews</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom_single">
+                    <div class="time_calc">
+                        <h4 class="time_heading">Time Calculator</h4>
+                        <p class="intro">Enter your average cycling speed <b>on flat ground</b> below in order to find out your estimated time to cycle this route.</p>
+                        <div class="calc">
+                            <div class="speed_box">
+                                <label for="speed" class="label">Speed (km/h): </label>
+                                <input type="number" class="speed" id="speed" min="0" value="NaN">
+                            </div>
+                            <div class="time_box">
+                                <div class="time_display_heading">Estimated time (min): </div>
+                                <div class="time_display" id="time">0</div>
+                            </div>
+                            <button class="time_button" onclick="calcTime()">Calculate Time</button>
+                        </div>
+                    </div>
+
+                    <iframe src="https://www.plotaroute.com/embedmap/1745992?units=km"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../script.js"></script>
+    </body>
+</html>
