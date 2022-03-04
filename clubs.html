@@ -1,109 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD166J0B5Z"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-RD166J0B5Z');
-        </script>
+        <script src="https://kit.fontawesome.com/9e6ef96c5b.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
         <title>Cycle Guernsey - Clubs</title>
         <meta charset="utf-8">
     </head>
 
-    <body class="clubs_body">
+    <body>
         <div class="wrapper">
-            <div class="main_bar" id="mbc">
+            <div class="main_bar" id="main_bar_clubs">
                 <img src="images/Real Logo.png" class="logo"/>
-                <h1 class="heading"><strong>Cycle Guernsey - Clubs</strong></h1> 
-            </div>
-
-            <div class="menu_image_container">
-                <div class="menu_button_container">
-                    <button type="button" class="button" onclick="hidemenu()" id="menu_button"><strong>Menu</strong></button>
-                    <div class="menu_container" id="menu">
-                        <a href="index.html" class="menu_link" id="menu_link1" target="_blank">Home <span class="arrow" id="home_arrow_e"><strong> ^ </strong></span></a>
-                        <a href="routes.html" class="menu_link" id="menu_link2" target="_blank">Routes <span class="arrow" id="routes_arrow"><strong> ^ </strong></span></a>
-                        <a href="equipment.html" class="menu_link" id="menu_link3" target="_blank">Equipment <span class="arrow"><strong> ^ </strong></span></a>
-                    </div>
-                </div>
-
-                <div class="main_image_container">
-                    <img src="images/main_club_image.jpg" class="main_image"/>
-                    <p class="hidden">Contact <em class="dan">danieltroop10@gmail.com</em> for more details on cycling in Guernsey!</p>
+                <div class="menu" id="menu">
+                    <a class="menu_link" href="index.html">Home</a>
+                    <a class="menu_link" href="routes.html">Routes</a>
+                    <a class="menu_link" href="clubs.html">Clubs</a>
+                    <a class="menu_link" href="equipment.html">Equipment</a>
                 </div>
             </div>
 
-            <div class="main_container" id="main_container_clubs">
-                <div class="ad" id="ad_clubs">
-                    <a href="http://www.roversac.com/" target="_blank"><img src="images/rovers ad.png" class="ad_image"></a>
-                    <p class="ad_caption_home">Come join Rovers AC - run by the greatest football, athletics, and fitness coach
-                        in the Channel Islands. Contact <em>roversac@hotmail.co.uk</em> or come to <a class="item_link" id="ad_link" target="_blank" href="https://www.google.com/maps/place/Guernsey+Rovers+A.C./@49.4876722,-2.5808185,16.42z/data=!4m5!3m4!1s0x480d726cee5124f1:0x2e696f08b8b4ee3b!8m2!3d49.4857565!4d-2.579364">    
-                        Port Soif Clubhouse</a> to start your training regime.</p>
-                </div>
+            <div class="welcome_box" id="welcome_box_clubs">
+                <h1 class="welcome_title" id="welcome_title_clubs">Guernsey Cycling Clubs</h1>
+            </div>
 
-                <div class="text_container_clubs">
-                    <div class="velo">
-                        <h1 class="clubs_heading"> <strong>Guernsey Velo Club</strong> </h1>
+            <div class="text_container" id="text_container_clubs">
+                <div class="velo">
+                    <h1 class="clubs_heading"> <strong>Guernsey Velo Club</strong></h1>
+                    <div class="club_info"" id="club_info_velo">
+                        <img class="velo_image" src="images/velo.jpeg"/>
+
                         <p class="velo_text clubs_text">
-                            The Guernsey Velo Club (GVC) was founded in 1968 and is one of the most adavnced and rigourous cycling clubs
-                            on the island. It boasts multiple different teams, each of which caters for a distinct type and level of
-                            cycling including mountain, road, racing, and endurance. The club hosts weekly races and endurance cycles Sunday
-                            mornings, open to all members, as well as a regular sequence of competitive events in cross country and road riding
-                            throughout the year. <br/><br/>
+                            The Guernsey Velo Club (GVC) was founded in 1968 and is one of the most advanced and rigorous cycling clubs on the island. It boasts multiple 
+                            different teams, each of which caters for a distinct type and level of cycling including mountain, road, racing, and endurance. The club hosts 
+                            weekly races and endurance cycles Sunday mornings, open to all members, as well as a regular sequence of competitive events in cross country and 
+                            road riding throughout the year. <br/><br/>
                             
-                            To find out more, visit the <a href="https://www.gvc.gg/" class="clubs_text_link" target="_blank">GVC official website</a> or contact 
-                            President Mark Smith at <a class="clubs_contact" href="mailto:markleesmith@yahoo.co.uk" target="blank"><em>markleesmith@yahoo.co.uk</em></a>
-                            or <a class="clubs_contact" href="tel:07839264819" target="_blank"> <em>07839 264819.</em> </a>
+                            To find out more, visit the <a href="https://www.gvc.gg/" class="clubs_text_link" target="_blank">GVC website</a> or contact 
+                            President Mark Smith at <a class="clubs_text_link" href="mailto:markleesmith@yahoo.co.uk" target="blank"><em>markleesmith@yahoo.co.uk</em></a>
+                            or call him at <a class="clubs_text_link" href="tel:07839264819" target="_blank"> <em>07839 264819.</em> </a>
                         </p>
                     </div>
+                </div>
 
-                    <div class="rouleurs">
-                        <h1 class="clubs_heading"> <strong>Guernsey Rouleurs Cycling Club</strong> </h1> 
+                <hr>
+
+                <div class="rouleurs">
+                    <h1 class="clubs_heading"> <strong>Guernsey Rouleurs Cycling Club</strong> </h1> 
+                    <div class="club_info" id="club_info_rouleurs">
                         <p class="rouleurs_text clubs_text">
-                            Guernsey Rouleurs CC is a more relaxed and social cycling group than the Guernsey Velo Club, ideal for keen
-                            cyclists who don't enjoy the pressures of racing and extremely competitive cycling. Don't be fooled, though,
-                            the GRCC remains one of the most prolific cycling clubs on the island and has much to offer to excellent
-                            cyclists looking to challenge themselves. It operates mainly on Sunday mornings, hosting weekly
-                            rides between 6:30 and 8:30. Furthermore, the club offers cycling events with additional fun activities
-                            on a regular basis permitting riders to enjoy the friendly, social side of cycling and to meet other keen cyclists. <br/><br/>
+                            Guernsey Rouleurs CC is a more relaxed group, ideal for keen cyclists who don't enjoy the intensity of competitive 
+                            racing. Don't be fooled, however, the GRCC remains one of the most prolific cycling clubs on the island and has much to offer to cyclists looking 
+                            for a challenge. It operates mainly on Sunday mornings, hosting weekly rides between 6:30 and 8:30. Furthermore, the club offers additional social 
+                            events with fun cycling related activities. <br/><br/>
 
                             To find out more, visit the <a class="clubs_text_link" target="_blank" href="https://www.guernseyrouleurs.com/">
-                            Guernsey Rouleurs CC official website</a> or contact the club at <a href="mailto:guernseyrouleurs@gmail.com" target="_blank" class="clubs_contact">
+                            Guernsey Rouleurs CC official website</a> or contact the club at <a href="mailto:guernseyrouleurs@gmail.com" target="_blank" class="clubs_text_link">
                             <em>guernseyrouleurs@gmail.com.</em> </a>
                         </p>
-                    </div>
 
-                    <div class="events">
-                        <h1 class="clubs_heading"> <strong>Major Events</strong> </h1>
-                        <p class="events_text clubs_text">
-                            Both cycling clubs host a comprehensive range of events for cyclists of all manner and ability on a regular basis.
-                            Whilst the GVC and Guernsey Rouleurs website do mention these events, they are not regularly updated and they do not
-                            provide a reliable list detailing events happening in the next few weeks. The best way to discover this information
-                            is to follow club social media or become a registered memeber.
-                        </p> 
+                        <img class="rouleurs_image" src="images/rouleurs.jpg"/>
                     </div>
+                </div>
+                <hr>
 
+                <div class="link_container">
+                    <a href="index.html" class="link_box">
+                        <p class="link">Return to Home Page
+                        <i class="fas fa-angle-right arrow"></i>
+                        </p>
+                    </a>
+
+                    <a href="equipment.html" class="link_box" id="link_check">
+                        <p class="link">Learn More About equipment
+                        <i class="fas fa-angle-right arrow"></i>
+                        </p>
+                    </a>
+
+                    <a href="routes.html" class="link_box">
+                        <p class="link">Learn More About Routes
+                        <i class="fas fa-angle-right arrow"></i>
+                        </p>
+                    </a>
                 </div>
             </div>
 
-            <div class="links_container clubs_links_container">
-                <a href="index.html" class="home_link link" target="_blank">
-                    <p class="home_link_text"><strong>Home</strong></p>
-                </a>
-
-                <a href="routes.html" class="routes_link link" target="_blank">
-                    <p class="home_link_text"><strong>Routes</strong></p>
-                </a>
-
-                <a href="equipment.html" class="equipment_link link" target="_blank">
-                    <p class="home_link_text"><strong>Equipment</strong></p>
-                </a>
+            <div class="contact_bar">
+                <a href="#main_bar_clubs"><i class="fas fa-chevron-circle-up return_arrow"></i></a>
+                <div class="contact_menu">
+                    <p class="con1"><b>Contact Us</b></p>
+                    <a href="mailto:james@blix.co" class="con2"><b>Email:</b>&nbsp; james@blix.co</a>
+                    <p class="con3"><b>Instagram:</b>&nbsp; CycleGuernsey</p>
+                </div>
             </div>
         </div>
 

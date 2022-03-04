@@ -1,0 +1,72 @@
+.theader_link{
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.theader_link:hover{
+  color: rgb(202, 30, 30);
+}
+
+.routes_table_container{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.routes_table_title{
+  text-decoration: underline;
+  font-size: 2.8rem;
+}
+
+.table_header_routes{
+  background-color: white;
+}
+
+.routes_table, .routes_table th, .routes_table td{
+  border: 0.15rem black solid;
+  border-collapse: collapse;
+  margin-top: 2.1rem;
+  text-align: center;
+}
+
+.routes_table th{
+  font-size: 1.5rem;
+  background-color: lightcoral;
+}
+
+.routes_table th a{
+  color: rgb(75, 12, 142);
+}
+
+.routes_table th:hover{
+  opacity: 0.7;
+}
+
+.routes_table td{
+  font-size: 1.2rem;
+  background-color: lightgray;
+}
+
+.table_link:hover{
+  opacity: 0.7;
+}
+
+.table_link a{
+  display: block;
+  padding: 1rem;
+}
+
+.route_title{
+  color: rgb(88, 1, 88);
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.route_title:hover{
+  color: rgb(202, 30, 30);
+}

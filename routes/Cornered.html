@@ -5,29 +5,39 @@
         <link href="../stylesheet.css" rel="stylesheet" type="text/css"/>
         <title>Routes - Cornered</title>
         <meta charset="utf-8">
+        <script> var folderPath = "./routes/routeimages/cornered"; </script>
+        <script src="https://kit.fontawesome.com/9e6ef96c5b.js" crossorigin="anonymous"></script>
     </head>
 
-    <body onload="setInterval(function() {transition()}, 3000)">
+    <body onload="transition()">
         <div class="wrapper">
-            <div class="main_bar" id="mbs">
+            <div class="main_bar" id="main_bar_single">
                 <img src="../images/Real Logo.png" class="logo"/>
-                <h1 class="heading"><strong>Routes - Cornered</strong></h1>
-                <div class="return">
-                    <a class="return_image_link" href="../routes.html" target="_blank"><img class="return_image" src="../images/ba.png"/></a>
-                    <p class="return_text">Back</p>
+                <h1 class="single_title">Routes - Cornered</h1>
+                <div class="menu" id="menu">
+                    <a class="menu_link" href="../index.html">Home</a>
+                    <a class="menu_link" href="../routes.html">Routes</a>
+                    <a class="menu_link" href="../clubs.html">Clubs</a>
+                    <a class="menu_link" href="../equipment.html">Equipment</a>
                 </div>
             </div>
 
-            <div class="single_body">
-                <div class="top_single">
-                    <div class="route_image_container">
-                        <img class="route_image" src="routeimages/cornered/1.JPG" id="i1"/>
-                        <img class="route_image current" src="routeimages/cornered/2.JPG" id="i2"/>
-                        <img class="route_image" src="routeimages/cornered/3.JPG" id="i3"/>
-                    </div>
+            <div class="route_image_container">
+                <img src="routeimages/cornered/1.jpg" id="1" class="route_image current">
+                <img src="routeimages/cornered/2.jpg" id="2" class="route_image">
+                <img src="routeimages/cornered/3.jpg" id="3" class="route_image">
+                <div class="transition_icon_container">
+                    <i class="fas fa-chevron-circle-left" id="slide_left"></i>
+                    <i class="fas fa-chevron-circle-right" id="slide_right"></i>
+                </div>
+            </div>
+
+            <div class="all_single_container">
+                <div class="top_single_container">
+                    <iframe src="https://www.plotaroute.com/embedmap/1744287?units=km"></iframe>
 
                     <div class="route_stats">
-                        <h3 class="header">Statistics</h3>
+                        <h3 class="header">Route Stats</h3>
                         <ul class="route_stats_list">
                             <li id="length"><strong>Length: </strong> &nbsp;<span id="lengthNum">4.98</span> km</li>
                             <li id="ascent"><strong>Ascent: </strong> &nbsp;<span id="ascentNum">50</span> m</li>
@@ -40,24 +50,31 @@
                     </div>
                 </div>
 
-                <div class="bottom_single">
-                    <div class="time_calc">
-                        <h4 class="time_heading">Time Calculator</h4>
-                        <p class="intro">Enter your average cycling speed <b>on flat ground</b> below in order to find out your estimated time to cycle this route.</p>
-                        <div class="calc">
-                            <div class="speed_box">
-                                <label for="speed" class="label">Speed (km/h): </label>
-                                <input type="number" class="speed" id="speed" min="0" value="NaN">
-                            </div>
-                            <div class="time_box">
-                                <div class="time_display_heading">Estimated time (min): </div>
-                                <div class="time_display" id="time">0</div>
-                            </div>
-                            <button class="time_button" onclick="calcTime()">Calculate Time</button>
-                        </div>
-                    </div>
+                <hr class="single_line">
 
-                    <iframe src="https://www.plotaroute.com/embedmap/1744287?units=km"></iframe>
+                <div class="time_calc">
+                    <h4 class="time_heading">Time Calculator</h4>
+                    <p class="time_intro">Enter your average cycling speed <b>on flat ground</b> below in order to find out your estimated time to cycle this route.</p>
+                    <div class="calc">
+                        <div class="speed_box">
+                            <label for="speed" class="label">Speed (km/h): </label>
+                            <input type="number" class="speed" id="speed" min="0" value="NaN">
+                        </div>
+                        <div class="time_box">
+                            <div class="time_display_heading">Estimated time (min): </div>
+                            <div class="time_display" id="time">0</div>
+                        </div>
+                        <button class="time_button" onclick="calcTime()">Calculate Time</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_bar" id="contact_bar_single">
+                <a href="#main_bar_single"><i class="fas fa-chevron-circle-up return_arrow"></i></a>
+                <div class="contact_menu">
+                    <p class="con1"><b>Contact Us</b></p>
+                    <a href="mailto:james@blix.co" class="con2"><b>Email:</b>&nbsp; james@blix.co</a>
+                    <p class="con3"><b>Instagram:</b>&nbsp; CycleGuernsey</p>
                 </div>
             </div>
         </div>

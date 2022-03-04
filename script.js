@@ -1,42 +1,3 @@
-/*Hide and display menu*/
-function hidemenu_borders(menu) {
-    menu.classList.add("menu_hide_borders")
-}
-
-function showmenu_borders(menu) {
-    menu.classList.remove("menu_hide_borders")
-}
-
-function hidemenu_links(menu_link1, menu_link2, menu_link3){
-    menu_link1.classList.add("menu_link_hide")
-    menu_link2.classList.add("menu_link_hide")
-    menu_link3.classList.add("menu_link_hide")
-}
-
-function showmenu_links(menu_link1, menu_link2, menu_link3){
-    menu_link1.classList.remove("menu_link_hide")
-    menu_link2.classList.remove("menu_link_hide")
-    menu_link3.classList.remove("menu_link_hide")
-}
-
-function hidemenu(){
-    var menu_link1 = document.getElementById("menu_link1")
-    var menu_link2 = document.getElementById("menu_link2")
-    var menu_link3 = document.getElementById("menu_link3")
-    var menu = document.getElementById("menu")
-    if (!menu.classList.contains("menu_hide")){
-        menu.classList.add("menu_hide")
-        setTimeout(function() {hidemenu_links(menu_link1, menu_link2, menu_link3)}, 10)
-        setTimeout(function() {hidemenu_borders(menu)}, 200)
-    } 
-    else{
-        menu.classList.remove("menu_hide")
-        setTimeout(function() {showmenu_links(menu_link1, menu_link2, menu_link3)}, 300)
-        showmenu_borders(menu)
-    }
-}
-/*Hide and display menu ------------------------------------------------------------------------------------------------------*/
-
 function getSortFunction() {
     return (row1, row2) => {
         if (!isNaN(parseFloat(row1.text)))
@@ -133,22 +94,64 @@ function calcTime (){
     }
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+function transition_right(){
+    clearInterval(repeat)
+    repeat = setInterval(transition_right, 5000)
+    const currentImage = document.querySelector(".current")
+    console.log(currentImage.id)
+    if (currentImage.id == "2"){
+        const newImage = document.getElementById("3")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+
+    if (currentImage.id == "1"){
+        const newImage = document.getElementById("2")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+
+    if (currentImage.id == "3"){
+        const newImage = document.getElementById("1")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+        
+}
+
+function transition_left(){
+    clearInterval(repeat)
+    repeat = setInterval(transition_right, 5000)
+    const currentImage = document.querySelector(".current")
+    console.log(currentImage.id)
+    if (currentImage.id == "2"){
+        const newImage = document.getElementById("1")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+
+    if (currentImage.id == "1"){
+        const newImage = document.getElementById("3")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+
+    if (currentImage.id == "3"){
+        const newImage = document.getElementById("2")
+        currentImage.classList.remove("current")
+        newImage.classList.add("current")
+    }
+        
+}
+
+var repeat
 
 function transition(){
-    console.log("happened")
-    const current_image_list = document.getElementsByClassName("route_image current")
-    const current_image = current_image_list[0]
-    if (current_image.id == "i1"){
-        current_image.classList.remove("current")
-        document.getElementById("i2").classList.add("current")
-    }
-    if (current_image.id == "i2"){
-        current_image.classList.remove("current")
-        document.getElementById("i3").classList.add("current")
-    }
-    if (current_image.id == "i3"){
-        current_image.classList.remove("current")
-        document.getElementById("i1").classList.add("current")
-    }
+    const slide_left = document.getElementById("slide_left")
+    slide_left.addEventListener("click", transition_left)
+    const slide_right = document.getElementById("slide_right")
+    slide_right.addEventListener("click", transition_right)
+
+    repeat = setInterval(transition_right, 4000)
 }

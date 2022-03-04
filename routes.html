@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD166J0B5Z"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-RD166J0B5Z');
-        </script>
+        <script src="https://kit.fontawesome.com/9e6ef96c5b.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="stylesheet.css" rel="stylesheet" type="text/css" />
         <title>Cycle Guernsey - Routes</title>
@@ -19,264 +11,285 @@
     <body class="routes">
 
         <div class="wrapper">
-            <div class="main_bar" id="mbr">
+            <div class="main_bar" id="main_bar_routes">
                 <img src="images/Real Logo.png" class="logo"/>
-                <h1 class="heading"><strong>Cycle Guernsey - Routes</strong></h1> 
+                <div class="menu" id="menu">
+                    <a class="menu_link" href="index.html">Home</a>
+                    <a class="menu_link" href="routes.html">Routes</a>
+                    <a class="menu_link" href="clubs.html">Clubs</a>
+                    <a class="menu_link" href="equipment.html">Equipment</a>
+                </div>
+            </div>
+
+            <div class="welcome_box" id="welcome_box_routes">
+                <h1 class="welcome_title" id="welcome_title_routes">Guernsey Cycling Routes</h1>
+                <a href="#routes_table_container_id"><div class="welcome_routes_link_box">
+                    <p class="welcome_routes_link wrlh">View Route Table</p>
+                    <i class="fas fa-chevron-down down_arrow wrlh" id="down_arrow_equipment"></i>
+                </div></a>
             </div>
 
             <div class="routes_top_container">
-                <div class="menu_button_container">
-                    <button type="button" class="button" onclick="hidemenu()" id="menu_button"><strong>Menu</strong></button>
-                    <div class="menu_container" id="menu">
-                        <a href="index.html" class="menu_link" id="menu_link1" target="_blank">Home <span class="arrow"><span><strong> ^ </strong></span></a>
-                        <a href="equipment.html" class="menu_link" id="menu_link2" target="_blank">Equipment <span class="arrow"><strong> ^ </strong></span></a>
-                        <a href="clubs.html" class="menu_link" id="menu_link3" target="_blank">Clubs <span class="arrow"><strong> ^ </strong></span></a>
-                    </div>
+                <div class="routes_text">
+                    A small island though it may be, Guernsey has a wealth of beautiful parishes and tranquil routes 
+                    to explore, and in no better manner than by bike. Whether it is the steep inclines of Talbot Valley, 
+                    the rolling fields of St Andrews, or the unforgettable views of a sunset over the sea, cycling in 
+                    Guernsey is an adventure for riders of all ages and abilities. Use the table below to sort through 
+                    routes and find those perfect for you, or click on a route name to find out more about it.
+
                 </div>
 
-                <div class="extra_info">
-                    <div class="text">
-                        A small island though it may be, Guernsey has an enormous wealth of routes and areas to discover, and in no better manner than by bike. Whether it is the steep inclines
-                        of Talbot Valley, the rolling fields of St Andrews, or the urban distraction of the seafront which captures your imagination, the list of routes below contains all of these
-                        possibilities and more. Click on a route name to find out more... 
-                    </div>
-                    <div class="ad">
-                        <a href="https://joblab.uk/" target="_blank"><img src="images/joblab.png" class="joblab_image"/></a>
-                        <p class="caption">Find out more about JobLab - the Guernsey digital recruitment agency which aims to help you find work easily. Sign up for FREE today!</p>
-                    </div>
+                <div class="ad">
+                    <a href="https://joblab.uk/" target="_blank"><img src="images/joblab.png" class="joblab_image"/></a>
+                    <p class="caption">Find out more about JobLab - the Guernsey digital recruitment agency which aims to help you find work easily. Sign up for FREE today!</p>
                 </div>
-
             </div>
 
-            <div class="routes_container">
+            <div class="routes_table_container" id="routes_table_container_id">
                 <h1 class="routes_table_title">Routes</h1>
                 <table class="routes_table" id="table">
                     <thead>
                         <tr>
-                            <th>Route Name</th>
-                            <th>Length (km)</th>
-                            <th>Ascent (m)</th>
-                            <th>Gradient (m/km)</th>
-                            <th>Start Parish</th>
-                            <th>End Parish</th>
+                            <th class="th1">Route Name</th>
+                            <th class="th2">Length (km)</th>
+                            <th class="th3">Ascent (m)</th>
+                            <th class="th4">Gradient (m/km)</th>
+                            <th class="th5">Start Parish</th>
+                            <th class="th6">End Parish</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="table_link"><a href="routes/Beginner.html" class="route_title 0" target="_blank">Beginner</a></td>
-                            <td class="1">6.08</td>
-                            <td class="2">23</td>
-                            <td class="3">4</td>
-                            <td class="4">St Martins</td>
-                            <td class="5">St Peter Port</td>
+                            <td class="table_link"><a href="routes/Beginner.html" class="route_title 0">Beginner</a></td>
+                            <td class="c1">6.08</td>
+                            <td class="c2">23</td>
+                            <td class="c3">4</td>
+                            <td class="c4">St Martins</td>
+                            <td class="c5">St Peter Port</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Centre Circuit.html" class="route_title 0" target="_blank">Centre Circuit</a></td>
-                            <td class="1">10.20</td>
-                            <td class="2">147</td>
-                            <td class="3">14</td>
-                            <td class="4">St Andrews</td>
-                            <td class="5">St Andrews</td>
+                            <td class="table_link"><a href="routes/Centre Circuit.html" class="route_title 0">Centre Circuit</a></td>
+                            <td class="c1">10.20</td>
+                            <td class="c2">147</td>
+                            <td class="c3">14</td>
+                            <td class="c4">St Andrews</td>
+                            <td class="c5">St Andrews</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Church-Chapel.html" class="route_title 0" target="_blank">Church-Chapel</a></td>
-                            <td class="1">11.24</td>
-                            <td class="2">113</td>
-                            <td class="3">10</td>
-                            <td class="4">Forest</td>
-                            <td class="5">Forest</td>
+                            <td class="table_link"><a href="routes/Church-Chapel.html" class="route_title 0">Church-Chapel</a></td>
+                            <td class="c1">11.24</td>
+                            <td class="c2">113</td>
+                            <td class="c3">10</td>
+                            <td class="c4">Forest</td>
+                            <td class="c5">Forest</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Cornered.html" class="route_title 0" target="_blank">Cornered</a></td>
-                            <td class="1">4.98</td>
-                            <td class="2">50</td>
-                            <td class="3">10</td>
-                            <td class="4">St Peters</td>
-                            <td class="5">St Peters</td>
+                            <td class="table_link"><a href="routes/Cornered.html" class="route_title 0">Cornered</a></td>
+                            <td class="c1">4.98</td>
+                            <td class="c2">50</td>
+                            <td class="c3">10</td>
+                            <td class="c4">St Peters</td>
+                            <td class="c5">St Peters</td>
                         </tr>
                         <tr>
-                            <td class="table_link longest_link"><a href="routes/Double Island.html" class="route_title 0" target="_blank">Double Island with a Twist</a></td>
-                            <td class="1">73.80</td>
-                            <td class="2">637</td>
-                            <td class="3">9</td>
-                            <td class="4">St Martins</td>
-                            <td class="5">St Martins</td>
+                            <td class="table_link longest_link"><a href="routes/Double Island.html" class="route_title 0">Double Island with a Twist</a></td>
+                            <td class="c1">73.80</td>
+                            <td class="c2">637</td>
+                            <td class="c3">9</td>
+                            <td class="c4">St Martins</td>
+                            <td class="c5">St Martins</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Half Island.html" class="route_title 0" target="_blank">Half Island</a></td>
-                            <td class="1">18.20</td>
-                            <td class="2">119</td>
-                            <td class="3">7</td>
-                            <td class="4">Castel</td>
-                            <td class="5">St Peter Port</td>
+                            <td class="table_link"><a href="routes/Half Island.html" class="route_title 0">Half Island</a></td>
+                            <td class="c1">18.20</td>
+                            <td class="c2">119</td>
+                            <td class="c3">7</td>
+                            <td class="c4">Castel</td>
+                            <td class="c5">St Peter Port</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Heights of Guernsey.html" class="route_title 0" target="_blank">Heights of Guernsey</a></td>
-                            <td class="1">32.88</td>
-                            <td class="2">375</td>
-                            <td class="3">11</td>
-                            <td class="4">Forest</td>
-                            <td class="5">Torteval</td>
+                            <td class="table_link"><a href="routes/Heights of Guernsey.html" class="route_title 0">Heights of Guernsey</a></td>
+                            <td class="c1">32.88</td>
+                            <td class="c2">375</td>
+                            <td class="c3">11</td>
+                            <td class="c4">Forest</td>
+                            <td class="c5">Torteval</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Hotel-Hotel.html" class="route_title 0" target="_blank">Hotel-Hotel</a></td>
-                            <td class="1">27.08</td>
-                            <td class="2">343</td>
-                            <td class="3">13</td>
-                            <td class="4">St Martins</td>
-                            <td class="5">Torteval</td>
+                            <td class="table_link"><a href="routes/Hotel-Hotel.html" class="route_title 0">Hotel-Hotel</a></td>
+                            <td class="c1">27.08</td>
+                            <td class="c2">343</td>
+                            <td class="c3">13</td>
+                            <td class="c4">St Martins</td>
+                            <td class="c5">Torteval</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Jammy Dodger.html" class="route_title 0" target="_blank">Jammy Dodger</a></td>
-                            <td class="1">7.98</td>
-                            <td class="2">58</td>
-                            <td class="3">7</td>
-                            <td class="4">Vale</td>
-                            <td class="5">Vale</td>
+                            <td class="table_link"><a href="routes/Jammy Dodger.html" class="route_title 0">Jammy Dodger</a></td>
+                            <td class="c1">7.98</td>
+                            <td class="c2">58</td>
+                            <td class="c3">7</td>
+                            <td class="c4">Vale</td>
+                            <td class="c5">Vale</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/King in the North.html" class="route_title 0" target="_blank">King in the North</a></td>
-                            <td class="1">20.22</td>
-                            <td class="2">111</td>
-                            <td class="3">5</td>
-                            <td class="4">St Peter Port</td>
-                            <td class="5">Vale</td>
+                            <td class="table_link"><a href="routes/King in the North.html" class="route_title 0">King in the North</a></td>
+                            <td class="c1">20.22</td>
+                            <td class="c2">111</td>
+                            <td class="c3">5</td>
+                            <td class="c4">St Peter Port</td>
+                            <td class="c5">Vale</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/King of the Hill.html" class="route_title 0" target="_blank">King of the Hill</a></td>
-                            <td class="1">22.18</td>
-                            <td class="2">244</td>
-                            <td class="3">11</td>
-                            <td class="4">Castel</td>
-                            <td class="5">Castel</td>
+                            <td class="table_link"><a href="routes/King of the Hill.html" class="route_title 0">King of the Hill</a></td>
+                            <td class="c1">22.18</td>
+                            <td class="c2">244</td>
+                            <td class="c3">11</td>
+                            <td class="c4">Castel</td>
+                            <td class="c5">Castel</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Old Town Roads.html" class="route_title 0" target="_blank">Old Town Roads</a></td>
-                            <td class="1">17.00</td>
-                            <td class="2">150</td>
-                            <td class="3">9</td>
-                            <td class="4">Vale</td>
-                            <td class="5">Vale</td>
+                            <td class="table_link"><a href="routes/Old Town Roads.html" class="route_title 0">Old Town Roads</a></td>
+                            <td class="c1">17.00</td>
+                            <td class="c2">150</td>
+                            <td class="c3">9</td>
+                            <td class="c4">Vale</td>
+                            <td class="c5">Vale</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Pilgramage.html" class="route_title 0" target="_blank">Pilgramage</a></td>
-                            <td class="1">36.33</td>
-                            <td class="2">356</td>
-                            <td class="3">10</td>
-                            <td class="4">Forest</td>
-                            <td class="5">St Martins</td>
+                            <td class="table_link"><a href="routes/Pilgramage.html" class="route_title 0">Pilgramage</a></td>
+                            <td class="c1">36.33</td>
+                            <td class="c2">356</td>
+                            <td class="c3">10</td>
+                            <td class="c4">Forest</td>
+                            <td class="c5">St Martins</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Reservoir Circuit.html" class="route_title 0" target="_blank">Reservoir Circuit</a></td>
-                            <td class="1">20.13</td>
-                            <td class="2">227</td>
-                            <td class="3">11</td>
-                            <td class="4">St Peters</td>
-                            <td class="5">St Peters</td>
+                            <td class="table_link"><a href="routes/Reservoir Circuit.html" class="route_title 0">Reservoir Circuit</a></td>
+                            <td class="c1">20.13</td>
+                            <td class="c2">227</td>
+                            <td class="c3">11</td>
+                            <td class="c4">St Peters</td>
+                            <td class="c5">St Peters</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Riverrun.html" class="route_title 0" target="_blank">Riverrun</a></td>
-                            <td class="1">10.28</td>
-                            <td class="2">118</td>
-                            <td class="3">11</td>
-                            <td class="4">St Saviours</td>
-                            <td class="5">St Saviours</td>
+                            <td class="table_link"><a href="routes/Riverrun.html" class="route_title 0">Riverrun</a></td>
+                            <td class="c1">10.28</td>
+                            <td class="c2">118</td>
+                            <td class="c3">11</td>
+                            <td class="c4">St Saviours</td>
+                            <td class="c5">St Saviours</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Rolling Fields.html" class="route_title 0" target="_blank">Rolling Fields</a></td>
-                            <td class="1">13.08</td>
-                            <td class="2">160</td>
-                            <td class="3">12</td>
-                            <td class="4">St Andrews</td>
-                            <td class="5">St Andrews</td>
+                            <td class="table_link"><a href="routes/Rolling Fields.html" class="route_title 0">Rolling Fields</a></td>
+                            <td class="c1">13.08</td>
+                            <td class="c2">160</td>
+                            <td class="c3">12</td>
+                            <td class="c4">St Andrews</td>
+                            <td class="c5">St Andrews</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Round Island.html" class="route_title 0" target="_blank">Round Island</a></td>
-                            <td class="1">36.75</td>
-                            <td class="2">270</td>
-                            <td class="3">7</td>
-                            <td class="4">St Martins</td>
-                            <td class="5">St Martins</td>
+                            <td class="table_link"><a href="routes/Round Island.html" class="route_title 0">Round Island</a></td>
+                            <td class="c1">36.75</td>
+                            <td class="c2">270</td>
+                            <td class="c3">7</td>
+                            <td class="c4">St Martins</td>
+                            <td class="c5">St Martins</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Scenic Surprise.html" class="route_title 0" target="_blank">Scenic Surprise</a></td>
-                            <td class="1">22.45</td>
-                            <td class="2">321</td>
-                            <td class="3">14</td>
-                            <td class="4">St Andrews</td>
-                            <td class="5">Forest</td>
+                            <td class="table_link"><a href="routes/Scenic Surprise.html" class="route_title 0">Scenic Surprise</a></td>
+                            <td class="c1">22.45</td>
+                            <td class="c2">321</td>
+                            <td class="c3">14</td>
+                            <td class="c4">St Andrews</td>
+                            <td class="c5">Forest</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Seafront Sunday.html" class="route_title 0" target="_blank">Seafront Sunday</a></td>
-                            <td class="1">19.32</td>
-                            <td class="2">197</td>
-                            <td class="3">10</td>
-                            <td class="4">St Peter Port</td>
-                            <td class="5">St Peter Port</td>
+                            <td class="table_link"><a href="routes/Seafront Sunday.html" class="route_title 0">Seafront Sunday</a></td>
+                            <td class="c1">19.32</td>
+                            <td class="c2">197</td>
+                            <td class="c3">10</td>
+                            <td class="c4">St Peter Port</td>
+                            <td class="c5">St Peter Port</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Southwest Circuit.html" class="route_title 0" target="_blank">Southwest Circuit</a></td>
-                            <td class="1">12.61</td>
-                            <td class="2">122</td>
-                            <td class="3">10</td>
-                            <td class="4">Torteval</td>
-                            <td class="5">Torteval</td>
+                            <td class="table_link"><a href="routes/Southwest Circuit.html" class="route_title 0">Southwest Circuit</a></td>
+                            <td class="c1">12.61</td>
+                            <td class="c2">122</td>
+                            <td class="c3">10</td>
+                            <td class="c4">Torteval</td>
+                            <td class="c5">Torteval</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Straight Down the Middle.html" class="route_title 0" target="_blank">Straight Down the Middle</a></td>
-                            <td class="1">16.90</td>
-                            <td class="2">182</td>
-                            <td class="3">11</td>
-                            <td class="4">Vale</td>
-                            <td class="5">St Andrews</td>
+                            <td class="table_link"><a href="routes/Straight Down the Middle.html" class="route_title 0">Straight Down the Middle</a></td>
+                            <td class="c1">16.90</td>
+                            <td class="c2">182</td>
+                            <td class="c3">11</td>
+                            <td class="c4">Vale</td>
+                            <td class="c5">St Andrews</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Stroll in the Park.html" class="route_title 0" target="_blank">Stroll in the Park</a></td>
-                            <td class="1">6.77</td>
-                            <td class="2">86</td>
-                            <td class="3">13</td>
-                            <td class="4">St Andrews</td>
-                            <td class="5">St Andrews</td>
+                            <td class="table_link"><a href="routes/Stroll in the Park.html" class="route_title 0">Stroll in the Park</a></td>
+                            <td class="c1">6.77</td>
+                            <td class="c2">86</td>
+                            <td class="c3">13</td>
+                            <td class="c4">St Andrews</td>
+                            <td class="c5">St Andrews</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Sweats Only.html" class="route_title 0" target="_blank">Sweats Only</a></td>
-                            <td class="1">27.08</td>
-                            <td class="2">318</td>
-                            <td class="3">12</td>
-                            <td class="4">St Sampsons</td>
-                            <td class="5">St Peters</td>
+                            <td class="table_link"><a href="routes/Sweats Only.html" class="route_title 0">Sweats Only</a></td>
+                            <td class="c1">27.08</td>
+                            <td class="c2">318</td>
+                            <td class="c3">12</td>
+                            <td class="c4">St Sampsons</td>
+                            <td class="c5">St Peters</td>
                         </tr>
                         <tr>
-                            <td class="table_link"><a href="routes/Thighbreaker.html" class="route_title 0" target="_blank">Thighbreaker</a></td>
-                            <td class="1">16.01</td>
-                            <td class="2">200</td>
-                            <td class="3">12</td>
-                            <td class="4">St Peters</td>
-                            <td class="5">St Peters</td>
+                            <td class="table_link"><a href="routes/Thighbreaker.html" class="route_title 0">Thighbreaker</a></td>
+                            <td class="c1">16.01</td>
+                            <td class="c2">200</td>
+                            <td class="c3">12</td>
+                            <td class="c4">St Peters</td>
+                            <td class="c5">St Peters</td>
                         </tr>
-                        <tr>
-                            <td class="table_link"><a href="routes/Wild West.html" class="route_title 0" target="_blank">Wild West</a></td>
-                            <td class="1">25.66</td>
-                            <td class="2">169</td>
-                            <td class="3">7</td>
-                            <td class="4">St Peters</td>
-                            <td class="5">St Smapsons</td>
+                        <tr id="table_bottom">
+                            <td class="table_link"><a href="routes/Wild West.html" class="route_title 0">Wild West</a></td>
+                            <td class="c1">25.66</td>
+                            <td class="c2">169</td>
+                            <td class="c3">7</td>
+                            <td class="c4">St Peters</td>
+                            <td class="c5">St Sampsons</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="links_container" id="routes_links_container">
-                <a href="index.html" class="home_link link" target="_blank">
-                    <p class="home_link_text"><strong>Home</strong></p>
+            <div class="link_container_routes">
+                <a href="index.html" class="link_box">
+                    <p class="link">Return to Home Page
+                    <i class="fas fa-angle-right arrow"></i>
+                    </p>
                 </a>
 
-                <a href="equipment.html" class="equipment_link link" target="_blank">
-                    <p class="home_link_text"><strong>Equipment</strong></p>
+                <a href="clubs.html" class="link_box">
+                    <p class="link">Learn More About Clubs
+                    <i class="fas fa-angle-right arrow"></i>
+                    </p>
                 </a>
-                <a href="clubs.html" class="clubs_link link" target="_blank">
-                    <p class="home_link_text"><strong>Clubs</strong></p>
+
+                <a href="equipment.html" class="link_box" id="link_check">
+                    <p class="link">Learn More About Equipment
+                    <i class="fas fa-angle-right arrow"></i>
+                    </p>
                 </a>
+            </div> 
+
+            <div class="contact_bar">
+                <a href="#main_bar_routes"><i class="fas fa-chevron-circle-up return_arrow"></i></a>
+                <div class="contact_menu">
+                    <p class="con1"><b>Contact Us</b></p>
+                    <a href="mailto:james@blix.co" class="con2"><b>Email:</b>&nbsp; james@blix.co</a>
+                    <p class="con3"><b>Instagram:</b>&nbsp; CycleGuernsey2022</p>
+                </div>
             </div>
         </div>
 
