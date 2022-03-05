@@ -36,6 +36,10 @@ a{
   margin-left: 0.8rem;
 }
 
+.logo_image{
+  height: 100%;
+}
+
 .menu{
   display: flex;
   gap: 1.5rem;
