@@ -865,30 +865,59 @@ hr{
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 59rem;
-  justify-content: space-evenly;
-  margin-top: 2.9rem;
+  width: 49rem;
+  gap: 5rem;
+  margin-top: 3.6rem;
+  align-items: center;
 }
 
 .routes_text{
   width: 35rem;
-  margin-top: 0.75rem;
 }
 
-.joblab_image{
-  height: 14rem;
+.ad{
+  width: 9rem;
   transition-duration: 100ms;
-  border-radius: 0.34rem;
+}
+
+.ad:hover{
+  transform: scale(1.03);
 }
 
 .caption{
-  font-size: 0.8rem;
-  width: 14rem;
+  font-size: 0.9rem;
   margin-top: 0.9rem;
+  font-weight: 600;
 }
 
-.joblab_image:hover{
-  transform: scale(1.07);
+@media only screen and (max-width: 850px){
+  .routes_top_container{
+    width: 92%;
+    gap: 12%;
+  }
+
+  .routes_text{
+    width: 68%;
+  }
+
+  .ad{
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .routes_top_container{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .routes_text{
+    width: 100%;
+  }
+
+  .ad{
+    width: 9rem;
+  }
 }
 
 .routes_table_container{
@@ -1028,40 +1057,8 @@ tbody tr:last-child td{
 }
 
 @media only screen and (max-width: 963px) {
-  .routes_top_container{
-    width: 92%;
-    justify-content: left;
-    gap: 3rem;
-  }
-
-  .routes_text{
-    width: 60%;
-  }
-
-  .ad{
-    width: 35%;
-  }
-
   .route_title, .c1, .c2, .c3, .c4, .c5{
     font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 751px){
-  .routes_top_container{
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-
-  .routes_text{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ad{
-    display: none;
   }
 }
 
